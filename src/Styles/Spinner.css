@@ -1,0 +1,27 @@
+/** Spinner - css code provided by https://loading.io/css/ */
+.spinner {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+.spinner:after {
+    content: " ";
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0.1rem 0;
+    border-radius: 50%;
+    border: 0.2rem solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: spinner 1.2s linear infinite;
+}
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

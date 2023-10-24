@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'DM-Sans'; 
+    src: url('../Fonts/DM_Sans/DMSans-font.ttf') format('truetype'); 
+    
+  }
+
+  
+:root{
+    /** colors */
+    --body-color:#FDFEFF;
+    --text-color: #353839;
+    --server-message-color: inherit;
+    --label-color: inherit;
+    --scrap-button-color: #3A67C5 /*#1e83e9*/;
+    --scrap-button-text-color: #FDFEFF;
+    --add-button-text-color: #3A67C5;
+    --disabled-button-color: #6f737a;
+    --tooltip-background: #333;
+
+    /** font */
+    --font-family: "DM-Sans", "Arial";
+    --server-message-font-size: clamp(28px, 6rem, 32px);
+    --input-font-size: clamp(16px, 1.8rem, 18px);
+    --label-font-size: clamp(14px, 1.5rem, 16px);
+    --submit-btn-font-size: clamp(18px, 2rem, 20px);
+    --add-btn-font-size: clamp(14px, 1.3rem, 16px);
+    --description-font-size: clamp(12px, 1.3rem, 14px);
+    --url-font-size: clamp(10px, 12pt, 14px);
+    
+
+
+    /** dimensions */
+    --server-message-mobile-font-size: clamp(18px, 2rem, 22px);
+    --main-containr-min-width: 33vw;
+    --main-container-max-width: 35vw;
+    --label-width: 6rem;
+    --inputs-list-div-max-height: 30dvh;
+
+    /** shapes */
+    --scrap-btn-broder-radis: 5px;
+
+    /** positioning */
+    --main-space-from-top: 10dvh;
+
+
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+#root{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: column;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+
+button{
+    cursor: pointer;
+}
+
+button:disabled, button[disabled]{
+    cursor: not-allowed;
+}
+
+.main_app_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: var(--main-containr-min-width);
+    max-width: var(--main-container-max-width);
+    max-height: 60%;
+
+    margin-top: var(--main-space-from-top);
+}
+
+
+
+#server_message{
+    color: var(--server-message-color);
+    font-size: var(--server-message-font-size);
+    text-align: center;
+    font-weight: 500;
+    cursor: default;
+    max-width: 100%;
+    max-height: 25%;
+}
+
+#description{
+    text-align: center;
+    font-size: var(--description-font-size);
+    font-weight: 400;
+    max-width: 100%;
+    max-height: 10%;
+    margin: 0.8rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Smaller Screen */
+
+@media screen and (max-width: 800px) {
+
+    .main_app_container{
+        max-width: 95%;
+    }
+
+
+    #server_message{
+        font-size: var(--server-message-mobile-font-size);
+        /*margin-top: 80%;*/
+    }
+
+}
