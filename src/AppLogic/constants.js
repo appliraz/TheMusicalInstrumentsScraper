@@ -49,7 +49,7 @@ export const constants = {
 
 
 export const serverExtensions = {
-    server_url: "https://lirazah.pythonanywhere.com/",
+    server_url: "https://flask-musical-instruments-server.vercel.app/",
     download: "download",
     scrap: "scrap",
     supported_websites: "websites"
