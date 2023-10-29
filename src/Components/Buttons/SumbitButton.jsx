@@ -30,6 +30,7 @@ export default function SubmitButton(){
         return false
     }
 
+  
     const stopIfNoInputs = () => {
       if(userInputs === null){
         alert.showAlert(constants.NO_SUPPORTED_WEBSITES_ERROR);
