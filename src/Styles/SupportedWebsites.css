@@ -107,6 +107,9 @@
         position: relative;
         margin-top: 4dvh;
     }
+    .website_card::before{
+        display: none;
+    }
 
 
 }
