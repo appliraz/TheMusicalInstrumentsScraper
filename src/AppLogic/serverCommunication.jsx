@@ -44,7 +44,8 @@ export const fetchSupportedWebsites = async () => {
 export const askServerToScrap = async (webs_to_scrap) => {
   console.log("asking server to scrap");
   try{
-    const response =  await axios.post(serverExtensions.server_url + serverExtensions.scrap, { webs_to_scrap })
+    //const response =  await axios.post(serverExtensions.server_url + serverExtensions.scrap, { webs_to_scrap })
+    const response = await makeApiCall('https://httpbin.org/delay/15');
     console.log("server finished scraping");
     return response
   }
